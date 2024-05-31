@@ -1,0 +1,59 @@
+body {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.container i {
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.container .img-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.container .img-container i {
+  position: absolute;
+  color: green;
+  font-size: 48px;
+  transition: all 200ms ease-in-out;
+}
+
+.yellowStar {
+  color: yellow;
+}
+
+@media only screen and (max-width: 440px) {
+  .container {
+    width: 350px;
+    height: 500px;
+  }
+}
